@@ -1,3 +1,5 @@
-<p>
-  my-pokedex works!
-</p>
+<div class="pokemon-list">
+  <div *ngFor="let pokemon of pokemons">
+    <a href="/pokemon/{{pokemon}}">{{pokemon}}</a>
+  </div>
+</div>

@@ -24,7 +24,7 @@ import { MyPokemonComponent } from './my-pokemon/my-pokemon.component';
         component: MyPokedexComponent
       },
       {
-        path: 'pokemon/:pokemonId',
+        path: 'pokemon/:pokemonName',
         component: MyPokemonComponent
       }
     ])
