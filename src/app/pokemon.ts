@@ -7,7 +7,6 @@ export class Pokemon {
   abilities: string[];
 
   static parse(data) {
-    console.log(data);
     let pokemon = new Pokemon();
     pokemon._id = data.id;
     pokemon.name = data.name;

@@ -1,3 +1,21 @@
-<h1>Wanted!</h1>
-<img src="{{pokemon.image}}">
-<p>Name: {{pokemon.name}}</p>
+
+<section id='main-info'>
+  <h1 margin="auto">Wanted!</h1>
+  <div class="container">
+    <div>
+      <h1>Name: {{pokemon.name}}</h1>
+      <h2>Weight: {{pokemon.weight}}</h2>
+      <h2>Height: {{pokemon.height}}</h2>
+      <h3>Abilities:</h3>
+      <h3 *ngFor="let ability of pokemon.abilities">
+    	{{ability}}
+  	  </h3>
+
+    </div>
+  </div>
+</section>
+
+<div id ="poster">
+	<img src="{{pokemon.image}}">
+</div>
+
